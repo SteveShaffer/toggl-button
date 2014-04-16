@@ -135,3 +135,8 @@
   font-weight: normal;
   margin-top: 4px;
 }
+
+/*** REDMINE PIXEL-COOKERS THEME ***/
+.toggl-button.redmine {
+  margin-right: 12px;
+}
