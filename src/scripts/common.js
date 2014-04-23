@@ -7,7 +7,6 @@ function $(s, elem) {
   return elem.querySelector(s);
 }
 
-
 function createTag(name, className, innerHTML) {
   var tag = document.createElement(name);
   tag.className = className;
@@ -52,9 +51,8 @@ var togglbutton = {
             togglbutton.renderTo(selector, renderer);
           });
           observer.observe(document, {childList: true, subtree: true});
-        } else {
-          togglbutton.renderTo(selector, renderer);
         }
+        togglbutton.renderTo(selector, renderer);
       }
     });
   },
