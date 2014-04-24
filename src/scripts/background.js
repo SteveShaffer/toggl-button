@@ -24,7 +24,7 @@ var TogglButton = {
       'producteev\\.com',
       'sifterapp\\.com',
       'google\\.com',
-      'redmine\\.org',
+      'projects\\.eecworld\\.com',
     ].join('|')
   ),
 
