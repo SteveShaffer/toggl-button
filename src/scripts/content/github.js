@@ -2,9 +2,9 @@
 /*global $: false, document: false, togglbutton: false*/
 'use strict';
 
-togglbutton.render('#js-discussion-header', {}, function (elem) {
+togglbutton.render('#js-discussion-header:not(.toggl)', {observe: true}, function (elem) {
   var link, description,
-    numElem = $('.issue-number', elem),
+    numElem = $('.gh-header-number', elem),
     titleElem = $('.js-issue-title', elem),
     projectElem = $('.js-current-repository');
 
@@ -19,5 +19,5 @@ togglbutton.render('#js-discussion-header', {}, function (elem) {
     projectName: projectElem && projectElem.textContent
   });
 
-  $('.gh-header-meta').appendChild(link);
+  $('.flex-table-item-primary').appendChild(link);
 });

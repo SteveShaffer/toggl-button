@@ -1,10 +1,9 @@
-/*jslint indent: 2 */
+/*jslint indent: 2, unparam: true*/
 /*global $: false, document: false, togglbutton: false*/
 'use strict';
 
 togglbutton.render('#docs-toolbar-wrapper', {}, function (elem) {
-  var link, description,
-    titleElem = $('.docs-title-inner');
+  var link, description, titleElem = $('.docs-title-inner');
 
   description = titleElem.innerText;
 
@@ -13,5 +12,5 @@ togglbutton.render('#docs-toolbar-wrapper', {}, function (elem) {
     description: description
   });
 
-  $('#docs-toolbar-wrapper').appendChild(link);
+  $('#docs-menubar').appendChild(link);
 });

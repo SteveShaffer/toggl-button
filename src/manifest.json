@@ -1,6 +1,6 @@
 {
   "name": "Toggl Button",
-  "version": "0.2.13.1",
+  "version": "0.3.8",
   "manifest_version": 2,
   "description": "Add Official Toggl Online Timer to Popular Web Tools",
   "background": {
@@ -31,7 +31,13 @@
     "*://*.bitbucket.org/*",
     "*://*.sifterapp.com/*",
     "*://docs.google.com/*",
-    "*://projects.eecworld.com/*"
+    "*://*.redmine.org/*",
+    "*://*.myjetbrains.com/*",
+    "*://*.capsulecrm.com/*",
+    "*://*.zendesk.com/*",
+    "*://go.xero.com/*",
+    "*://web.any.do/*",
+    "*://*.todoist.com/*"
   ],
   "icons": {
     "16": "images/icon-16.png",
@@ -57,7 +63,13 @@
         "*://*.producteev.com/*",
         "*://*.sifterapp.com/*",
         "*://docs.google.com/*",
-        "*://projects.eecworld.com/*"
+        "*://*.redmine.org/*",
+        "*://*.myjetbrains.com/*",
+        "*://*.capsulecrm.com/*",
+        "*://*.zendesk.com/*",
+        "*://go.xero.com/*",
+        "*://web.any.do/*",
+        "*://*.todoist.com/app*"
       ],
       "css": ["styles/style.css"],
       "js": ["scripts/common.js"]
@@ -133,6 +145,30 @@
     {
       "matches": ["*://projects.eecworld.com/*"],
       "js": ["scripts/content/redmine.js"]
+    },
+    {
+      "matches": ["*://*.myjetbrains.com/*"],
+      "js": ["scripts/content/youtrack.js"]
+    },
+    {
+      "matches": ["*://*.capsulecrm.com/*"],
+      "js": ["scripts/content/capsule.js"]
+    },
+    {
+      "matches": ["*://*.zendesk.com/*"],
+      "js": ["scripts/content/zendesk.js"]
+    },
+    {
+      "matches": ["https://go.xero.com/*"],
+      "js": ["scripts/content/xero.js"]
+    },
+    {
+      "matches": ["https://web.any.do/*"],
+      "js": ["scripts/content/anydo.js"]
+    },
+    {
+      "matches": ["https://*.todoist.com/app*"],
+      "js": ["scripts/content/todoist.js"]
     }
   ]
 }
